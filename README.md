@@ -9,5 +9,7 @@ and officials of the public works department (which is existing implementable mo
 **How exactly are we approaching the higher authorities?**
 
 After registration of a complaint, We will send mail to the concerned authorities, reminder mails will be sent after an interval of 10 days if not reverted back.
+
 We will use social media platforms to create a greater community of people, we will post our polls on the complaint registered to get that circulated among people that will redirect them to our website.
+
 We will collaborate with local newspapers to reach more and more people, and we will provide them a section on our website and In return, will expect a section in their newspaper about the registered complaints on our website.
