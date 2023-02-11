@@ -1,6 +1,5 @@
 <?php
 session_start();
- 
 ?>
 
 <!DOCTYPE html>
@@ -22,11 +21,11 @@ session_start();
 </div>
 
 <div class="topnav">
-    <a href="index.html">Home</a>
+    <a href="index1.php">Home</a>
     <a href="about_us.html">About Us</a>
     <a href="helpline.html">Emergency Helpline Numbers</a>
     
-    <a href="logout.html" style="float:right">Logout</a>
+    <a href="logout.php" style="float:right">Logout</a>
     <a href="admin.html" style="float:right">Admin Login</a>
     <a href="login.html" style="float:right">Login</a>
     <a href="signup.html" style="float:right">Signup</a>
@@ -40,30 +39,30 @@ session_start();
     <div>
 	<h2 align="center">Hello, welcome . you have logged in successfully.
     <?php 
-	//echo $_SESSION['username'];
+	echo $_SESSION['username'];
     ?>
     </h2>
     </div>
 
      <button class="button" style="vertical-align:middle">
                 <span> 
-                    <a href="complaint2.html">Post Grievance</a>
+                    <a href="complaint2.php">Post Grievance</a>
                     </span>
                     </button>
         
         <button class="button" style="vertical-align:middle">
                 <span> 
-                    <a href="track_grievance.html">Track Grievance</a>
+                    <a href="track_grievance.php">Track Grievance</a>
                     </span>
                     </button>
         <button class="button" style="vertical-align:middle">
                 <span> 
-                    <a href="participate.html">Participate in a poll</a>
+                    <a href="participate.php">Participate in a poll</a>
                     </span>
                     </button>
         <button class="button" style="vertical-align:middle">
                 <span> 
-                    <a href="drive.html">Join a Drive</a>
+                    <a href="drive.php">Join a Drive</a>
                     </span>
                     </button>
       
@@ -180,3 +179,5 @@ Subjudice cases or any matter concerning judgment given by any court. Personal a
 
 </body>
 </html>
+
+
