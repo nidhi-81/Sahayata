@@ -12,4 +12,4 @@ After registration of a complaint, We will send mail to the concerned authoritie
 
 We will use social media platforms to create a greater community of people, we will post our polls on the complaint registered to get that circulated among people that will redirect them to our website.
 
-We will collaborate with local newspapers to reach more and more people, and we will provide them a section on our website and viceversa.
+We will collaborate with local newspapers to reach more and more people, and we will provide them a section on our website and vice-versa.
