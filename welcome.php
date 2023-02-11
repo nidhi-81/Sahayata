@@ -1,5 +1,6 @@
 <?php
 session_start();
+ 
 ?>
 
 <!DOCTYPE html>
@@ -9,6 +10,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahayata Grievance Cell | Home</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,7 +23,7 @@ session_start();
 </div>
 
 <div class="topnav">
-    <a href="index1.php">Home</a>
+    <a href="index.html">Home</a>
     <a href="about_us.html">About Us</a>
     <a href="helpline.html">Emergency Helpline Numbers</a>
     
@@ -39,30 +41,30 @@ session_start();
     <div>
 	<h2 align="center">Hello, welcome . you have logged in successfully.
     <?php 
-	echo $_SESSION['username'];
+	//echo $_SESSION['username'];
     ?>
     </h2>
     </div>
 
      <button class="button" style="vertical-align:middle">
                 <span> 
-                    <a href="complaint2.php">Post Grievance</a>
+                    <a href="complaint2.html">Post Grievance</a>
                     </span>
                     </button>
         
         <button class="button" style="vertical-align:middle">
                 <span> 
-                    <a href="track_grievance.php">Track Grievance</a>
+                    <a href="track_grievance.html">Track Grievance</a>
                     </span>
                     </button>
         <button class="button" style="vertical-align:middle">
                 <span> 
-                    <a href="participate.php">Participate in a poll</a>
+                    <a href="participate.html">Participate in a poll</a>
                     </span>
                     </button>
         <button class="button" style="vertical-align:middle">
                 <span> 
-                    <a href="drive.php">Join a Drive</a>
+                    <a href="drive.html">Join a Drive</a>
                     </span>
                     </button>
       
@@ -84,7 +86,7 @@ Subjudice cases or any matter concerning judgment given by any court. Personal a
 </p>
     </div>
   </div>
-  
+</div>
   <div class="rightcolumn">
     <div class="card">
       <h2>Upcoming Events</h2>
@@ -179,5 +181,3 @@ Subjudice cases or any matter concerning judgment given by any court. Personal a
 
 </body>
 </html>
-
-
