@@ -7,6 +7,7 @@ There a total of three major features in our website. Starting with ‘Post Grie
 and officials of the public works department (which is existing implementable model right now) . Third major feature in the website is that of ‘Joining a Drive’. We look forward on bringing NGOs and Social Clubs onboard which helps in building a sense of community which in turn also allows the user to actively participate in the society and become aware. There must be a number of users who would want to initiate a drive but without having mass support it would be futile. This feature provides individuals the option to gather people and be a contribution to the good cause. There is another concept of joining ‘e-drives’. Users from far away ends can connect and support a drive. People from different cities can be a part of the same event at the same time without having to step outside.
 
 **How exactly are we approaching the higher authorities?**
+
 After registration of a complaint, We will send mail to the concerned authorities, reminder mails will be sent after an interval of 10 days if not reverted back.
 We will use social media platforms to create a greater community of people, we will post our polls on the complaint registered to get that circulated among people that will redirect them to our website.
 We will collaborate with local newspapers to reach more and more people, and we will provide them a section on our website and In return, will expect a section in their newspaper about the registered complaints on our website.
