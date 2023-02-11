@@ -1,6 +1,6 @@
 <?php
 session_start();
-header('location:login.html');
+ //header('location:login.html');
 
 $con = mysqli_connect('localhost','root','','complaints_database');
 if($con){
@@ -11,28 +11,42 @@ else{
 }
 
 $name = $_POST['email'];
-$pass = $_POST['password'];
+$pass = $_POST['psw'];
 
 if(empty($name)){
 	echo "Authentication error,username is required";
-	header("Location: login.html");
+	//header("Location: login.html");
 	exit();
 }
 else if(empty($pass)){
-	header("Location: login_form.html");
+	//header("Location: login.html");
 	echo "Authentication error,password is required";
 	exit();
 }
-else{
+
 $q = "select * from register where email ='$name' and psw= '$pass'";
-}
+echo " the email is  and psw is: ". $name . $pass;
 
 $result = mysqli_query($con,$q);
-$num = mysqli_num_rows($result);
+echo "result is : ".$result;
+//$num = mysqli_num_rows($result);
+ 
 
-if($num==1)
+if($result!=0)
 {
-	$_SESSION['email'] = $name;
-	header('location:welcome.php');
+	echo " incorrect id or password.";
 }
+
+
+else{
+
+	echo " name had value : ".$name;
+	$_SESSION['username'] = $name;
+	header('location:welcome.php');
+	
+}
+
+	
+
 ?>
+
