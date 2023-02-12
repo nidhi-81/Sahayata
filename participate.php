@@ -25,7 +25,7 @@ if(isset($_SESSION['username']))
     <a href="index1.php">Home</a>
     <a href="about_us.html">About Us</a>
     <a href="helpline.html">Emergency Helpline Numbers</a>
-    <a href="logout.html" style="float:right">Logout</a>
+    <a href="logout.php" style="float:right">Logout</a>
     <a href="admin.html" style="float:right">Admin Login</a>
     <a href="login.html" style="float:right">Login</a>
     <a href="signup.html" style="float:right">Signup</a>
