@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 ?>
@@ -16,8 +15,7 @@ session_start();
             die("ERROR: Could not connect. "
                 .mysqli_connect_error());
         }
-         
-        // Taking all values from the form data(input)
+        
 		if(isset($_POST['submit']))
         {
         $locality =  $_POST['locality'];
@@ -28,12 +26,7 @@ session_start();
      
 
         $result = $conn->query($sql);
-        //$rows=mysqli_result($result);
        
-        //printf("Result set has %d rows.\n",$rowcount);
-        
-        //echo "$result->num_rows";
-        
         
         if ( $result->num_rows > 0) 
         {
@@ -57,7 +50,7 @@ session_start();
 </div>
 
 <div class="topnav">
-    <a href="index.php">Home</a>
+    <a href="index1.php">Home</a>
     <a href="about_us.html">About Us</a>
     <a href="helpline.html">Emergency Helpline Numbers</a>
     <a href="logout.php" style="float:right">Logout</a>
@@ -83,7 +76,7 @@ session_start();
     <?php
             while($row = $result->fetch_assoc()) 
             {   
-                //echo $row[];
+                
     ?>
                         <form action="vote.php" method="POST">
                     <tr>
@@ -91,21 +84,15 @@ session_start();
                         <td><?php echo $row["complainttype"]; ?></td>
                         <td><?php echo $row["subcomplainttype"]; ?></td>
                         <td><?php echo $row["complaintdescription"]; ?></td>
-                        <!-- <label for ="gender"><b>LEAVE YOUR VOTE : </b></label> -->
-
-
+                        
                                 <td>
                                     <br><input type="radio" name="yes" value="han">
-                                    <!-- name mai jo database ka naam hoga voh -->
-                                    <!-- value mai jo us button ki apni valu h vo -->
+                                   
                                     yes
                                     <input type="radio" name="yes" value="nah">
                                     no
                                     <input type="submit" class="signupbtn" name="submit" value="submit">
 
-                                    <!--  session assignment of trackid -->
-                                    <!-- $_SESSION['trackid']=$trackid; -->
-                                    <!-- count num of votes krna is still left -->
                                 </td>
 
                         </form>
@@ -115,7 +102,7 @@ session_start();
             }}
     ?>
         </table>
-        <!-- <input type="submit" class="signupbtn" name="submit" value="submit"> -->
+
         </div>
         </div>
         <div class="rightcolumn">
