@@ -9,20 +9,10 @@
             die("ERROR: Could not connect. "
                 .mysqli_connect_error());
         }
-        //$trackid;
-        // if( isset( $_POST("submit")))
-        // {
-        //     $trackid=$_POST("trackid");
-        //  }
-         
-        // // Taking all values from the form data(input)
-		
-           
+       
            $sql = "select * from register_complaints_table" ; 
            $result = mysqli_query($conn,$sql);
-            //$rows=mysqli_result($result);
-        
-        
+            
             if ( $result->num_rows > 0) 
             {
      ?>
@@ -45,7 +35,7 @@
 </div>
 
 <div class="topnav">
-    <a href="index.php">Home</a>
+    <a href="index1.php">Home</a>
     <a href="about_us.html">About Us</a>
     <a href="helpline.html">Emergency Helpline Numbers</a>
     <a href="logout.php" style="float:right">Logout</a>
