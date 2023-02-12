@@ -1,10 +1,9 @@
-
 <?php
 session_start();
 
 if(isset($_SESSION['username']))
   {
-    echo $_SESSION['username'];
+    
     ?>
 
 <!DOCTYPE html>
@@ -14,20 +13,21 @@ if(isset($_SESSION['username']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahayata Grievance Cell | Track Grievance</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="complaint.css">
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-   
-        <img src="skyispink2.jpg" width="1430" height="300">
-        <div class="centered">
-          <h1>Sahayata Grievance Cell</h1>
-        </div>
+    <body>
 
+       <div class="header">
+        <img src="skyispink2.jpg" width="1430" height="300">
+        <div class="centered"><h1>Sahayata Grievance Cell</h1></div>
+</div>
 
 <div class="topnav">
-  <a href="index1.php">Home</a>
+  <a href="index.html">Home</a>
   <a href="about_us.html">About Us</a>
   <a href="helpline.html">Emergency Helpline Numbers</a>
   <a href="logout.php" style="float:right">Logout</a>
@@ -44,10 +44,10 @@ if(isset($_SESSION['username']))
       
       <div class="container" style="background-color:#f1f1f1">
         
-        <form action="fetch_status.php" method="post">
+        <form action="fetch_trackid.php" method="post">
         <label for ="trackid"><b>Track ID</b></label>
         <input type="text" placeholder="Enter Track Id" name ="trackid">
-        <input type="submit"  name="submit" value="submit">Submit
+        <input type="submit"  name="submit" value="submit">
         </form>
 <br></br>
 
@@ -61,15 +61,12 @@ if(isset($_SESSION['username']))
 <p>Following are the key features of the system:</P>
 
 <p>Easy to use:</P>
-<p>Allows registration of grievance 24 x 7. Portal is integrated vertically above with GoI (CPGRAMS) and below with the districts and its subordinate Officers 
-  Provision to submit the grievance in English.</P>
+<p>Allows registration of grievance 24 x 7. Portal is integrated vertically above with GoI (CPGRAMS) and below with the districts and its subordinate Officers Provision to submit the grievance in English.</P>
 
 <p>Transparency/Accountability:</P>
-Grievances cannot be deleted/tampered by anyone including the admin. Fortnightly reports of all Departments/Officers are submitted to the Lieutenant Governor. Unique 
-Track Id available for tracking. Facility to submit clarification related to the grievance.</P>
+Grievances cannot be deleted/tampered by anyone including the admin. Fortnightly reports of all Departments/Officers are submitted to the Lieutenant Governor. Unique Track Id available for tracking. Facility to submit clarification related to the grievance.</P>
 <P>Issues which are not taken up for redress :</P>
-Subjudice cases or any matter concerning judgment given by any court. Personal and family disputes. Service matters. RTI matters. Anything that impacts upon 
-territorial integrity of the country or friendly relations with other countries. Suggestions.
+Subjudice cases or any matter concerning judgment given by any court. Personal and family disputes. Service matters. RTI matters. Anything that impacts upon territorial integrity of the country or friendly relations with other countries. Suggestions.
 </p>
 </div>
     </div>
@@ -169,9 +166,6 @@ territorial integrity of the country or friendly relations with other countries.
 
 </body>
 </html>
-
-
-
 <?php
   }
 
@@ -180,7 +174,3 @@ territorial integrity of the country or friendly relations with other countries.
      header ("Location: login.html");
      }
 ?>
-
-
-
-
