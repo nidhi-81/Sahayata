@@ -1,4 +1,37 @@
-<?php
+
+         <!DOCTYPE html>
+         <html lang="en">
+         <head>
+             <meta charset="UTF-8">
+             <meta http-equiv="X-UA-Compatible" content="IE=edge">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <title>Sahayata Grievance Cell | Home</title>
+             <link rel="stylesheet" href="style.css">
+         </head>
+         <body>
+             <body>
+         
+                <div class="header">
+           
+           <img src="skyispink2.jpg" width="1480" height="300">
+           <div class="centered"><h1>Sahayata Grievance Cell</h1></div>
+         </div>
+         
+         <div class="topnav">
+             <a href="index.html">Home</a>
+             <a href="about_us.html">About Us</a>
+             <a href="helpline.html">Emergency Helpline Numbers</a>
+             <a href="logout.php" style="float:right">Logout</a>
+             <a href="admin.html" style="float:right">Admin Login</a>
+             <a href="login.html" style="float:right">Login</a>
+             <a href="signup.html" style="float:right">Signup</a>
+             
+         </div>
+         
+         <div class="row">
+           <div class="leftcolumn">
+             <div class="card">
+		     <?php
       session_start();
     
 	  $conn = mysqli_connect("127.0.0.1", "root", "", "complaints_database");
@@ -40,39 +73,7 @@
                 
              }
                 
-         }
-         <!DOCTYPE html>
-         <html lang="en">
-         <head>
-             <meta charset="UTF-8">
-             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-             <title>Sahayata Grievance Cell | Home</title>
-             <link rel="stylesheet" href="style.css">
-         </head>
-         <body>
-             <body>
-         
-                <div class="header">
-           
-           <img src="skyispink2.jpg" width="1480" height="300">
-           <div class="centered"><h1>Sahayata Grievance Cell</h1></div>
-         </div>
-         
-         <div class="topnav">
-             <a href="index.html">Home</a>
-             <a href="about_us.html">About Us</a>
-             <a href="helpline.html">Emergency Helpline Numbers</a>
-             <a href="logout.php" style="float:right">Logout</a>
-             <a href="admin.html" style="float:right">Admin Login</a>
-             <a href="login.html" style="float:right">Login</a>
-             <a href="signup.html" style="float:right">Signup</a>
-             
-         </div>
-         
-         <div class="row">
-           <div class="leftcolumn">
-             <div class="card">
+         }?>
              </div>
              <div class="card">
                <div class="text">
