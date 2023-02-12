@@ -23,7 +23,7 @@ if(isset($_SESSION['username']))
 
 
 <div class="topnav">
-    <a href="index.html">Home</a>
+    <a href="index1.php">Home</a>
     <a href="about_us.html">About Us</a>
     <a href="helpline.html">Emergency Helpline Numbers</a>
     <a href="logout.html" style="float:right">Logout</a>
