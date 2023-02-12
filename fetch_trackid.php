@@ -2,38 +2,7 @@
 
 session_start();
 ?>
-<!-- 
-session_start();
-//header('location:login.php');
 
-$con = mysqli_connect('localhost','root','','register_complaints');
-
-if($con){
-echo" connected";
-}
-else{
-    echo"not connected";
-}
-if(isset($_POST['submit'])){
-$fname = $_POST['fname'];
-}
-if(empty($fname)){
-    echo "fname is required";
-    //header("Location: login.php");
-    exit();
-}
-
-
-$q = "select * from register_complaints_table";// where fname ='nidhi'";
-
-$result = $con->query($con,$q);
-$num = mysqli_result($result);
-
-if($num==1){
-   // $_SESSION['username'] = $name;
-    echo "found matching result successfully ";
-    //header('location:participate_in_a_poll.php');
-}*/ -->
 <html>
     <body>
     <?php				
@@ -42,12 +11,9 @@ if($num==1){
             die("ERROR: Could not connect. "
                 .mysqli_connect_error());
         }
-         
         
-        // Taking all values from the form data(input)
-
 		if(isset($_POST['submit']))
-        {
+    {
         $trackid =  $_POST['trackid'];
 		}
 
@@ -57,11 +23,6 @@ if($num==1){
      
 
         $result = $conn->query($sql);
-        //$rows=mysqli_result($result);
-       
-        //printf("Result set has %d rows.\n",$rowcount);
-        
-        //echo "$result->num_rows";
         
         
         if ( $result->num_rows > 0) 
@@ -75,20 +36,21 @@ if($num==1){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>complaint</title>
     <link rel="icon" href="logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="helpline.css">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-<div class="header">
+
   
   <img src="skyispink2.jpg" width="1480" height="300">
   <div class="centered"><h1>Sahayata Grievance Cell</h1></div>
-</div>
+
 
 <div class="topnav">
-    <a href="index.php">Home</a>
+    <a href="index1.php">Home</a>
     <a href="about_us.html">About Us</a>
-    <a href="helpline.html">Emergency Helpline Numbers</a>
+    <a href="helpline.html">Emergency Helpline Numbers</a> 
     <a href="logout.php" style="float:right">Logout</a>
     <a href="admin.html" style="float:right">Admin Login</a>
     <a href="login.html" style="float:right">Login</a>
@@ -98,7 +60,7 @@ if($num==1){
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
-<table align="left" border="lpx" style="width:600px; line-height:40px;">
+      <table align="center" border="lpx" style="width:600px; line-height:40px;" >
                     <tr> <th colspan="7"><h3>status of registered complaints </h3></th></tr>
                     <t>
                         <th>locaity</th>
@@ -121,15 +83,13 @@ if($num==1){
                         <td><?php echo $row["subcomplainttype"]; ?></td>
                         <td><?php echo $row["complaintdescription"]; ?></td>
                         <td><?php 
-                            include 'vote2.php';
-                            echo $_SESSION['yy'];
-                           // echo $row["yes"]; 
+                        
+                           echo $row["yes"]; 
                            ?></td><td>
                             <?php 
-                                 include 'vote2.php';
-                                 echo $_SESSION['nn'];
-                                 //echo $row["no"]; 
-                                 ?></td>
+                                
+                                echo $row["no"]; 
+                                //  ?></td>
                         <td><?php echo $row["status"]; ?></td>
                         
                     </tr>
@@ -142,10 +102,7 @@ if($num==1){
     ?>
         </table>
 
-      <!-- leave your vote buttons here YES/NO   -->
-      
-        </div>
-	  <div class="card">
+      <div class="card">
       <div class="text">
       <h2>WELCOME</h2>
       <p>Welcome to the Sahayata Grievance Cell</P>
@@ -162,7 +119,9 @@ Subjudice cases or any matter concerning judgment given by any court. Personal a
 </p>
 </div>
     </div>
+  
         </div>
+          </div>
         <div class="rightcolumn">
     <div class="card">
       <h2>Upcoming Events</h2>
@@ -254,8 +213,6 @@ Subjudice cases or any matter concerning judgment given by any court. Personal a
   <a href="privacy.html">Terms & Privacy</a>
 </div>
 </div>
-      
-
 <?php
 
         // Close connection
