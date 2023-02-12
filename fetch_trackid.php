@@ -145,6 +145,23 @@ if($num==1){
       <!-- leave your vote buttons here YES/NO   -->
       
         </div>
+	  <div class="card">
+      <div class="text">
+      <h2>WELCOME</h2>
+      <p>Welcome to the Sahayata Grievance Cell</P>
+
+<p>Following are the key features of the system:</P>
+
+<p>Easy to use:</P>
+<p>Allows registration of grievance 24 x 7. Portal is integrated vertically above with GoI (CPGRAMS) and below with the districts and its subordinate Officers Provision to submit the grievance in English.</P>
+
+<p>Transparency/Accountability:</P>
+Grievances cannot be deleted/tampered by anyone including the admin. Fortnightly reports of all Departments/Officers are submitted to the Lieutenant Governor. Unique Track Id available for tracking. Facility to submit clarification related to the grievance.</P>
+<P>Issues which are not taken up for redress :</P>
+Subjudice cases or any matter concerning judgment given by any court. Personal and family disputes. Service matters. RTI matters. Anything that impacts upon territorial integrity of the country or friendly relations with other countries. Suggestions.
+</p>
+</div>
+    </div>
         </div>
         <div class="rightcolumn">
     <div class="card">
