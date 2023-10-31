@@ -35,29 +35,23 @@
     <div class="card">
       <h2>Login Form</h2>
         
-      <form action="/action_page.php" method="post">
-      
+      <!-- <form id="formId" action="/action_page.php" method="post"> -->
+      <form id="formId">
         <div class="container" style="background-color:#f1f1f1">
           <form class="login-form" action ="validation.php" method="POST">
 
-            
-
           <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="email" required>
+          <input type="text" placeholder="Enter Username" name="email">
       
           <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <input type="password" placeholder="Enter Password" name="psw">
           
             <div class="submitbutton">
-            <a href="welcome.php">login</a>
-            </div>
-          
-          
+            <!-- <a onclick="validate()" href="welcome.php">login</a> -->
+            <a onclick="validate()" href="index.html">login</a>
+            <!-- <button onclick="validate(this)">LOGIN</button> -->
+            </div>          
         </div>
-      
-
-        
-          
       </form>
       
         </div>
@@ -162,7 +156,6 @@ Subjudice cases or any matter concerning judgment given by any court. Personal a
     </div>
   </div>
 </div>
-
 <div class="footer">
   <div class="topnav">
   <a href="faq.html">FAQ</a>
@@ -172,6 +165,32 @@ Subjudice cases or any matter concerning judgment given by any court. Personal a
 </div>
 
 </body>
+
+<script>
+function validate(formId){
+  var n = document.getElementById('formId')
+  var c = 0
+        if(n.email.value=="")
+            alert("Enter name")
+         if(!(n.email.value.match(/^([A-z]{1})([A-z 0-9]{5,15})@([A-z]{5,10}).com$/)))
+            alert("Enter a valid email")
+        if((n.email.value.match(/^([A-z]{1})([A-z 0-9]{5,15})@([A-z]{5,10}).com$/)))
+          c++
+         if (n.psw.value=="")
+            alert("Enter password")
+        if(!n.psw.value.match(/^([A-z 0-9]{5,15})$/))
+          alert("Enter a valid password")
+          if(n.psw.value.match(/^([A-z 0-9]{5,15})$/))
+            c++
+        if(c==2)
+          {
+            alert("welcome") 
+
+          }
+      
+}
+</script>
+
 </html>
 
 
